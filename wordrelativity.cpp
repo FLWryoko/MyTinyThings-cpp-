@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    string shaped_q,raw_q,str3,str4;
+    string shaped_q,raw_q,matched;
     
     int count = 0;
 
@@ -17,11 +17,11 @@ for (size_t i = 0; i < shaped_q.size(); i++)
 
         for (size_t i = 0; i < raw_q.size(); i++)
         {
-            str3 = raw_q.at(i); 
+            matched += raw_q.at(i); 
 
-                if (str3.find(raw_q) == raw_q.size())
+                if (matched == shaped_q)
                 {
-                    str4 = str3.find(raw_q);
+                    
                     count++;
                 }
         }
@@ -38,10 +38,8 @@ if (cout == 0)
     cout << "no match." << endl;
 }else
 {
-    cout << "str3:" << str3 << endl;
-    cout << "str4:" << str4 << endl;
-
-    cout << "count:" << count << endl;
+    
+    cout << "matched:" << count << endl;
 }
 
 }
