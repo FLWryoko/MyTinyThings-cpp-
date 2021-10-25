@@ -13,7 +13,7 @@ for (size_t i = 0; i < shaped_q.size(); i++)
 {
     if (shaped_q.at(i) == raw_q.at(0))
     {
-        cout << "shaped_q:.at(" << i << ") ==" << shaped_q.at(i) << endl;
+        
 
         for (size_t i = 0; i < raw_q.size(); i++)
         {
@@ -23,6 +23,7 @@ for (size_t i = 0; i < shaped_q.size(); i++)
                 {
                     
                     count++;
+                    matched = "";
                 }
         }
         
